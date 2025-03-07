@@ -1,0 +1,123 @@
+/* Reset and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light background color for a fresh look */
+    color: #333333; /* Dark text for better readability */
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00796b; /* Teal background for the header */
+    padding: 10px 20px;
+    border-bottom: 4px solid #ffab00; /* Bright yellow for accent */
+}
+
+.logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ffab00; /* Bright yellow for the logo */
+}
+
+/* Auth Links Styling */
+.auth-links {
+    display: flex;
+    gap: 20px; /* Space between login and register */
+}
+
+.auth-links a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #ffffff; /* White text for links */
+    background-color: #ff5722; /* Bright orange for buttons */
+    padding: 10px 15px; /* Padding for buttons */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.auth-links a:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+}
+
+/* Logo Container */
+.logo-container {
+    text-align: center;
+    margin: 50px 0; /* Add margin for spacing */
+}
+
+.pakimon {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 80px;
+    color: #ffcc00; /* Bright yellow for the logo */
+    text-shadow: 
+        -4px -4px 0 #005f5f, 
+        4px -4px 0 #005f5f, 
+        -4px 4px 0 #005f5f, 
+        4px 4px 0 #005f5f, 
+        0px 4px 8px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+.trading-card {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    background: #ff5722; /* Bright orange for the trading card */
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Navigation Styling */
+nav {
+    text-align: center; /* Center the navigation */
+    margin-top: 20px; /* Add some space above the nav */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    margin: 10px 0; /* Add vertical spacing between items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.5em; /* Increase font size */
+    color: #ffffff; /* White text for links */
+    padding: 15px 30px; /* Add padding for larger buttons */
+    background-color: #00796b; /* Teal background for buttons */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    display: inline-block; /* Make the link behave like a button */
+}
+
+nav ul li a:hover {
+    background-color: #004d40; /* Darker teal on hover */
+    color: #ffffff; /* Keep text white on hover */
+}
+
+/* Animated Background */
+@keyframes zoomAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
