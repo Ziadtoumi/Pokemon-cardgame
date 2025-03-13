@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FC24 Pack Store</title>
+    <title>Pakimon pack Store</title>
     <link rel="stylesheet" href="packstore.css">
+    <link rel="stylesheet" href="packstore.js">
 </head>
 <body>
-    <h1>Pakimon Pack Store</h1>
+    <div class="logo-container">
+        <div class="pakimon">Pakimon Pack Store</div>
+    </div>
     <div class="container">
-        <div class="pack pack1"></div>
-        <div class="pack pack2"></div>
-        <div class="pack pack3"></div>
+        <div class="pack pack1" onclick="showEffect(this, 'sparkle')"></div>
+        <div class="pack pack2" onclick="showEffect(this, 'lightning')"></div>
+        <div class="pack pack3" onclick="showEffect(this, 'sparkle')"></div>
     </div>
 
+    
 </body>
 </html>

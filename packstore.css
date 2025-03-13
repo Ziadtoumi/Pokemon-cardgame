@@ -1,20 +1,40 @@
 body {
-    background-color: rgb(82, 82, 82);
+    background-color: black;
     color: white;
     text-align: center;
     font-family: Arial, sans-serif;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.logo-container {
+    margin-bottom: 20px;
+    position: relative;
+    top: -180px;
+}
+.pakimon {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 80px;
+    color: #ffcc00;
+    text-shadow:
+        -4px -4px 0 #005f5f,
+        4px -4px 0 #005f5f,
+        -4px 4px 0 #005f5f,
+        4px 4px 0 #005f5f,
+        0px 4px 8px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
 }
 .container {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 50px;
-    position: relative;
 }
 .pack {
-    width: 120px;
-    height: 180px;
+    width: 200px; /* Increased size */
+    height: 280px; /* Increased size */
     border-radius: 15px;
     cursor: pointer;
     position: relative;
@@ -23,7 +43,28 @@ body {
 .pack:hover {
     transform: scale(1.1);
 }
-.pack1 { background: linear-gradient(45deg, orange, red, purple); }
-.pack2 { background: linear-gradient(45deg, silver, white, gray); }
-.pack3 { background: linear-gradient(45deg, gold, yellow, orange); }
-
+.pack:active {
+    transform: scale(1.2);
+}
+.pack1 { background: url('pokemon1.jpg') center/cover; }
+.pack2 { background: url('pokemon2.jpg') center/cover; }
+.pack3 { background: url('pokemon3.jpg') center/cover; }
+.effect {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.sparkle {
+    background: url('https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif') center/cover;
+}
+.lightning {
+    background: url('https://media.giphy.com/media/xT0GqzSWhYMWLElyxy/giphy.gif') center/cover;
+}
+.pack.zoom {
+    transform: scale(1.5);
+    transition: transform 0.5s;
+    z-index: 10;
+}
