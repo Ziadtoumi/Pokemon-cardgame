@@ -10,11 +10,13 @@ body {
     height: 100vh;
     margin: 0;
 }
+
 .logo-container {
     margin-bottom: 20px;
     position: relative;
     top: -180px;
 }
+
 .pakimon {
     font-family: 'Luckiest Guy', cursive;
     font-size: 80px;
@@ -27,28 +29,44 @@ body {
         0px 4px 8px rgba(0, 0, 0, 0.5);
     letter-spacing: 2px;
 }
+
 .container {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
+
 .pack {
-    width: 200px; /* Increased size */
-    height: 280px; /* Increased size */
+    width: 200px;
+    /* Increased size */
+    height: 280px;
+    /* Increased size */
     border-radius: 15px;
     cursor: pointer;
     position: relative;
     transition: transform 0.2s;
 }
+
 .pack:hover {
     transform: scale(1.1);
 }
+
 .pack:active {
     transform: scale(1.2);
 }
-.pack1 { background: url('pokemon1.jpg') center/cover; }
-.pack2 { background: url('pokemon2.jpg') center/cover; }
-.pack3 { background: url('pokemon3.jpg') center/cover; }
+
+.pack1 {
+    background: url('pokemon1.jpg') center/cover;
+}
+
+.pack2 {
+    background: url('pokemon2.jpg') center/cover;
+}
+
+.pack3 {
+    background: url('pokemon3.jpg') center/cover;
+}
+
 .effect {
     position: absolute;
     width: 100%;
@@ -57,12 +75,15 @@ body {
     left: 0;
     display: none;
 }
+
 .sparkle {
     background: url('https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif') center/cover;
 }
+
 .lightning {
     background: url('https://media.giphy.com/media/xT0GqzSWhYMWLElyxy/giphy.gif') center/cover;
 }
+
 .pack.zoom {
     transform: scale(1.5);
     transition: transform 0.5s;

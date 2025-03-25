@@ -3,7 +3,7 @@ function showEffect(pack, effectType) {
     effect.className = 'effect ' + effectType;
     pack.appendChild(effect);
     effect.style.display = 'block';
-    
+
     setTimeout(() => {
         effect.remove();
     }, 1000);
