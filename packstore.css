@@ -11,23 +11,16 @@ body {
     margin: 0;
 }
 
-.logo-container {
-    margin-bottom: 20px;
-    position: relative;
-    top: -180px;
-}
-.logo {
-    width: 200px;
-    height: auto;
-}
-.logo-text {
-    font-size: 24px;
-    color: rgb(181, 186, 27);
-    text-align: center;
-    margin-top: 10px;
-}
 .pack img{
-    width: 300px;
-    height: 412px;
+    width: 200px;
+    height: 100px;
+   
+   
+}
+.pakimon-card img{
+    width: 125px;
+    height: 180px;
     margin-top: 10px;
+    
+
 }
